@@ -21,7 +21,8 @@
     "test": "nyc --reporter=lcov --reporter=text-summary mocha",
     "posttest": "npm run cover",
     "test:watch": "mocha --watch",
-    "storybook": "start-storybook -p 9001 -c ./src/.storybook"
+    "storybook": "start-storybook -p 9001 -c ./src/.storybook",
+    "build-storybook": "build-storybook -o .storybook-build -c ./src/.storybook"
   },
   "nyc": {
     "exclude": [

@@ -36,7 +36,7 @@ storiesOf('Button', module)
   .add('submit for a form', () => (
     <div className="p4 center">
       <Form
-        handleSubmit={ () => action('form submitted') }>
+        handleSubmit={ action('form submitted') }>
         <Button type="submit">Submit</Button>
       </Form>
       <Info>Clicking the button should submit the form</Info>

@@ -1,25 +1,8 @@
 import React from 'react';
 import { storiesOf, action } from '@kadira/storybook';
+import Info from './info';
 import Button from '../button';
 import Form from '../form';
-
-const Info = ({ children }) => {
-  return (
-    <p className="p2 mt2 border rounded"
-      style={{
-        color: '#8a6d3b',
-        backgroundColor: '#fcf8e3',
-        borderColor: '#faebcc',
-      }}>
-      { children }
-    </p>
-  );
-};
-
-Info.propTypes = {
-  children: React.PropTypes.node.isRequired,
-};
-
 
 storiesOf('Button', module)
   .add('default button with text', () => (
@@ -29,7 +12,7 @@ storiesOf('Button', module)
   ))
   .add('with an action', () => (
     <div className="p4 center">
-      <Button onClick={ action('clicked') }>Submit</Button>
+      <Button onClick={ action('button action') }>Submit</Button>
       <Info>Clicking the button should fire the action</Info>
     </div>
   ))

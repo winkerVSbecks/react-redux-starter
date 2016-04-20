@@ -22,7 +22,8 @@
     "posttest": "npm run cover",
     "test:watch": "mocha --watch",
     "storybook": "start-storybook -p 9001 -c ./src/.storybook",
-    "build-storybook": "build-storybook -o .storybook-build -c ./src/.storybook"
+    "storybook:build": "build-storybook -o .storybook-build -c ./src/.storybook",
+    "storybook:deploy": "bash deploy.sh"
   },
   "nyc": {
     "exclude": [
